@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+    margin: 16px 8px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px;
+  }
+  
+  header a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px;
+    color: rgb(0, 112, 243);
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .skeleton-card {
+    width: 200px;
+    height: 200px;
+    padding-top: 100%; 
+    background: #f0f0f0; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+  }
+  .skeleton-card:nth-child(1){
+    width: 400px;
+    height: 400px;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  @media all and (min-width: 300px) {
+    main {
+      padding: 10px;
+    }
+  }
+  
+  @media all and (min-width: 600px) {
+    main {
+      padding: 15px;
+    }
+  }
+  
+  @media all and (min-width: 1200px) {
+    main {
+      padding: 20px;
+    }
+  }
+  
